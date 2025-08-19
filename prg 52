@@ -1,0 +1,5 @@
+<?php
+$arr = array(1,2,3);
+echo array_pop($arr); // removes last → 3
+echo array_shift($arr); // removes first → 1
+?>
