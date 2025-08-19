@@ -1,0 +1,8 @@
+<?php
+$arr = array("one", "two", "three");
+reset($arr); // ensure pointer starts at first element
+while(($value = current($arr)) !== false) {
+    echo $value . "\n";
+    next($arr); // move pointer
+}
+?>
