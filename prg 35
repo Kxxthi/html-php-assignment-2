@@ -1,0 +1,9 @@
+<?php
+$main = "Hello world";
+$search = "world";
+if (strpos($main, $search) !== false) {
+    echo "String found.";
+} else {
+    echo "String not found.";
+}
+?>
