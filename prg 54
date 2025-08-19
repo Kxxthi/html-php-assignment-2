@@ -1,0 +1,6 @@
+<?php
+$queue = array();
+array_push($queue,"User1");
+array_push($queue,"User2");
+echo array_shift($queue); // User1 gets ticket first
+?>
