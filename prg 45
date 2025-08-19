@@ -1,0 +1,18 @@
+<?php
+function array_diff_assoc_recursive($a1, $a2) {
+    $result = array();
+    foreach($a1 as $key => $value){
+        if(is_array($value)){
+            if(!isset($a2[$key]) || !is_array($a2[$key])){
+                $result[$key] = $value;
+            } else {
+                $diff = array_diff_assoc_recursive($value, $a2[$key]);
+                if(!empty($diff)) $result[$key] = $diff;
+            }
+        } elseif(!array_key_exists($key,$a2) || $a2[$key]!==$value){
+            $result[$key] = $value;
+        }
+    }
+    return $result;
+}
+?>
