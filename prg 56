@@ -1,0 +1,21 @@
+<?php
+$arr = array(5, 3, 8, 1);
+
+sort($arr);    // ascending
+print_r($arr);
+
+rsort($arr);   // descending
+print_r($arr);
+
+asort($arr);   // ascending maintain keys
+print_r($arr);
+
+arsort($arr);  // descending maintain keys
+print_r($arr);
+
+ksort($arr);   // sort by keys ascending
+print_r($arr);
+
+krsort($arr);  // sort by keys descending
+print_r($arr);
+?>
