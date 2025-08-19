@@ -1,0 +1,4 @@
+<?php
+$numbers = explode(" ", readline("Enter numbers separated by space: "));
+print_r($numbers);
+?>
