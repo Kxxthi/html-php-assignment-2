@@ -1,0 +1,18 @@
+<?php
+// Using arrays to create and manage playlists
+$playlist = array();
+
+// Add songs
+array_push($playlist, "Song A", "Song B", "Song C");
+print_r($playlist);
+
+// Remove a song
+unset($playlist[1]); // remove "Song B"
+$playlist = array_values($playlist); // reindex array
+print_r($playlist);
+
+// Merge another playlist
+$moreSongs = array("Song D", "Song E");
+$playlist = array_merge($playlist, $moreSongs);
+print_r($playlist);
+?>
