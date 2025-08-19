@@ -1,0 +1,9 @@
+<?php
+$main = "Welcome to PHP programming";
+$search = "PHP";
+if (strpos($main, $search) !== false) {
+    echo "String found.";
+} else {
+    echo "String not found.";
+}
+?>
