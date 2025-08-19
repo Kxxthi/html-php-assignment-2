@@ -1,0 +1,11 @@
+<?php
+$students = array(
+    "John" => 85,
+    "Mary" => 92,
+    "Sam" => 74
+);
+foreach($students as $name => $score){
+    $grade = ($score>=90)?"A":(($score>=75)?"B":"C");
+    echo "$name scored $score → Grade $grade\n";
+}
+?>
