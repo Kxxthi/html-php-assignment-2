@@ -1,0 +1,12 @@
+<?php
+// array_push() adds elements at the end
+// array_pop() removes the last element
+
+$stack = array("apple", "banana");
+array_push($stack, "cherry");  // add element
+print_r($stack);               // Array ( [0] => apple [1] => banana [2] => cherry )
+
+$last = array_pop($stack);     // remove last element
+echo "Popped element: $last\n";
+print_r($stack);               // Array ( [0] => apple [1] => banana )
+?>
