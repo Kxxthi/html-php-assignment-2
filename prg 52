@@ -1,0 +1,11 @@
+<?php
+// Stack - LIFO (Last In First Out)
+$stack = array();
+array_push($stack, "A", "B", "C"); // Push elements
+echo array_pop($stack)."\n";        // Pop last → C
+
+// Queue - FIFO (First In First Out)
+$queue = array();
+array_push($queue, "A", "B", "C"); // Enqueue
+echo array_shift($queue)."\n";      // Dequeue first → A
+?>
