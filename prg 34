@@ -1,0 +1,5 @@
+<?php
+$str = "The sky is blue. Blue is beautiful.";
+$result = preg_replace("/blue/i", "green", $str);
+echo $result;
+?>
