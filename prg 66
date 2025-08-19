@@ -1,0 +1,6 @@
+<?php
+$arr = array(10,20,30);
+echo "count(): " . count($arr) . "\n";
+echo "sizeof(): " . sizeof($arr) . "\n";
+// Both return same result → 3
+?>
