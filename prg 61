@@ -1,0 +1,8 @@
+<?php
+$arr = array(1, 2, 3, 4, 5);
+unset($arr[2]);          // delete element at index 2 (value 3)
+print_r($arr);
+
+$arr = array_values($arr); // optional: reindex array
+print_r($arr);
+?>
