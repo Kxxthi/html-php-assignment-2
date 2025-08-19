@@ -1,0 +1,10 @@
+<?php
+$arr = array(10, 20, 30);
+
+array_unshift($arr, 5);  // adds element at the beginning
+print_r($arr);           // Array ( [0] => 5 [1] => 10 [2] => 20 [3] => 30 )
+
+$first = array_shift($arr); // removes first element
+echo "Shifted element: $first\n";
+print_r($arr);              // Array ( [0] => 10 [1] => 20 [2] => 30 )
+?>
